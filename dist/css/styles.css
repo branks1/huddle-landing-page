@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/bg-desktop.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(257deg, 40%, 49%);
+  color: white;
+}
+
+.container {
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 40px 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+.text h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 40px;
+  width: 70%;
+}
+.text p {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+  font-size: 23px;
+  color: hsl(0deg, 0%, 80%);
+}
+.text button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 20px;
+  width: 40%;
+  border-radius: 30px;
+  color: hsl(257deg, 40%, 49%);
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px hsl(257deg, 40%, 39%);
+}
+
+button:hover {
+  color: white;
+  background-color: hsl(300deg, 69%, 71%);
+}
+
+ion-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: hsl(300deg, 69%, 71%);
+  border: 3px solid hsl(300deg, 69%, 71%);
+}
+
+.social-media-icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-self: flex-end;
+  position: absolute;
+  right: 5em;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../images/bg-desktop);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257deg, 40%, 49%);
+    color: white;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    padding: 1em;
+    margin: 0 1em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .text h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .text p {
+    text-align: center;
+    font-size: 17px;
+  }
+  .text button {
+    width: 80%;
+    align-self: center;
+    padding: 10px 20px;
+    margin: 2em 0;
+  }
+  .social-media-icons {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    align-self: center;
+    position: static;
+  }
+  header img {
+    width: 50%;
+  }
+  header {
+    align-self: flex-start;
+    padding: 20px 0;
+  }
+  .mockup img {
+    width: 100%;
+  }
+  footer {
+    align-self: center;
+    margin-bottom: 2em;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  ion-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
